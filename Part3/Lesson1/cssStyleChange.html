@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+    <style>
+        #field {
+            width: 900px;
+            height: 600px;
+            position: relative;
+            background: #007d90;
+        }
+        
+        #rect {
+            width: 77px;
+            height: 77px;
+            position: absolute;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <button onclick=jsAnimationCssStyle()> Start animation </button>
+    </p>
+    <div id="field">
+        <div id="rect"></div>
+    </div>
+    <script>
+        function jsAnimationCssStyle() {
+            let animationObject = document.getElementById("rect");
+            let position = 0;
+            let timing = setInterval(currentAnimationFrame, 5);
+
+            function currentAnimationFrame() {
+                if (position == 523) {
+                    clearInterval(timing);
+                } else {
+                    position++;
+                    animationObject.style.top = position + "px";
+                    animationObject.style.left = position + "px";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

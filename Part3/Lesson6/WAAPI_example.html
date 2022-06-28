@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="WAAPI_example.css">
+    <script async src="WAAPI_example.js"></script>
+</head>
+
+<body>
+    <button id="pause">Pause</button>
+    <button id="play">Play</button>
+    <button id="reverse">Reverse</button>
+    <button id="cancel">Cancel</button>
+
+    <svg width="900" height="600" style="stroke: cyan; fill: none;">
+        <g id="cr1_2" class="crc">
+            <circle cx="450" cy="300" r="28" stroke-width="3" fill="red">
+            </circle>
+
+            <circle id="cr2" cx="450" cy="300" r="280"
+                stroke-width="4" stroke-dasharray="0 1800">
+                <animate attributeName="stroke-dasharray"
+                begin="1s" dur="7s"
+                calcMode="linear"
+                values="0 1114; 75 500; 150 135; 24 24; 1114 0"
+                keyTimes="0; 0.1; 0.3; 0.5; 1"
+                fill="freeze"/>
+            </circle>
+        </g>
+        <circle id="cr3" cx="450" cy="300" r="280"
+        stroke="yellow" stroke-width="3" stroke-dasharray="0 1800" class="crc">
+        </circle>
+    </svg>
+</body>
+
+</html>

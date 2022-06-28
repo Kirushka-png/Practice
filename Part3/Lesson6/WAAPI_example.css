@@ -1,0 +1,18 @@
+body {
+    background: black;
+}
+
+button {
+    color: #fff;
+    background-color: #86cdea;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1;
+    padding: 9px 12px;
+}
+
+.crc {
+    transform-origin: 50% 50% 0px;
+}

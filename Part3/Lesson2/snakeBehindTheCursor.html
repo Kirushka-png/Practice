@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <svg width="900" height="600">
+        <circle id="c1" cx="0" cy="0" r="50" fill="red"/>
+        <circle id="c2" cx="0" cy="0" r="50" fill="yellow"/>
+        <circle id="c3" cx="0" cy="0" r="50" fill="green"/>
+        <circle id="c4" cx="0" cy="0" r="50" fill="blue"/>
+    </svg>
+    <script>
+        window.addEventListener('mousemove', function(e) {
+            for (let i = 1; i < 5; i++) {
+                let crId = "c" + i;
+                document.getElementById(crId).setAttribute("cx", e.pageX * (1 - i / 5));
+                document.getElementById(crId).setAttribute("cy", e.pageY * (1 - i / 5));
+            }
+        }, false);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+    <style>
+        .outer {
+            position: relative;
+        }
+        
+        .center-img {
+            width: 500px;
+            height: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 35%);
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        if (document.images) {
+            var img1 = new Image();
+            img1.src = "images/htmlImage1.jpg"
+            var img2 = new Image();
+            img2.src = "images/htmlImage2.jpg"
+        }
+    </script>
+    <div class="outer" onMouseOver="document.currentImg.src = img2.src;" onMouseOut="document.currentImg.src = img1.src;">
+        <img class="center-img" name="currentImg" src="images/htmlImage1.jpg" />
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+div {
+    display: block;
+    margin: 0 auto;
+    width: 888px;
+    height: 661px;
+    background: white;
+    filter: blur(1px);
+    transition: background 4s ease-in 1s, filter 4s ease-out 1s;
+}
+
+div:hover {
+    background: black;
+    filter: blur(0px);
+}

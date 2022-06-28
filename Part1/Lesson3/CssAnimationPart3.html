@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styleCssAnimationPart3.css">
+</head>
+
+<body>
+    <div>
+        <svg width="100%" height="100%">
+            <radialGradient id="softEdge" r="44%">
+                <stop stop-color="white" offset="60%" />
+                <stop stop-color="black" offset="100%" />
+            </radialGradient>
+            <defs>
+                <mask id="softEdgeMask">
+                    <circle cx="50%" cy="50%" r="50%" fill="url(#softEdge)" />
+                </mask>
+            </defs>
+            <image href="images/CSSTransitionsTestImage.jpg" mask="url(#softEdgeMask)" width="100%" height="100%" />
+        </svg>
+    </div>
+</body>
+
+</html>

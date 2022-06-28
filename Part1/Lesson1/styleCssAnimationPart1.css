@@ -1,0 +1,16 @@
+.LearnCssAnimation {
+    transform-origin: 50% 50% 0px;
+    animation-name: ImgRotate3dAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes ImgRotate3dAnimation {
+    50% {
+        transform: rotate3d(2, 0, 1, 180deg);
+    }
+    100% {
+        transform: rotate3d(2, 0, 1, 360deg);
+    }
+}
